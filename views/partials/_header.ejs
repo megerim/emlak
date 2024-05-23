@@ -1,0 +1,145 @@
+<!--*********************************************************************************************************-->
+    <!--HEADER **************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+    <header id="ts-header" class="fixed-top">
+
+        <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-secondary-navigation" class="navbar p-0">
+            <div class="container justify-content-end justify-content-sm-between">
+
+                <!--Left Side-->
+                <div class="navbar-nav d-none d-sm-block">
+                    <!--Phone-->
+                    <span class="mr-4">
+                            <i class="fa fa-phone-square mr-1"></i>
+                            +90 555 123 4567
+                        </span>
+                    <!--Email-->
+                    <a href="#">
+                        <i class="fa fa-envelope mr-1"></i>
+                        hello@emlak.com
+                    </a>
+                </div>
+
+                <!--Right Side-->
+                <div class="navbar-nav flex-row">
+
+                    <!--Search Input-->
+                    <input type="text" class="form-control p-2 border-left bg-transparent w-auto" placeholder="Ara">
+
+                    <!--Currency Select-->
+                    <select class="custom-select bg-transparent ts-text-small border-left" id="currency" name="currency">
+                        <option value="1">₺</option>
+                        <option value="2">$</option>
+                        <option value="3">€</option>
+                    </select>
+
+                    <!--Language Select-->
+                    <select class="custom-select bg-transparent ts-text-small border-left border-right" id="language" name="language">
+                        <option value="1">TR</option>
+                        <option value="2">EN</option>
+                        <option value="3">BG</option>
+                    </select>
+
+                </div>
+                <!--end navbar-nav-->
+            </div>
+            <!--end container-->
+        </nav>
+
+        <!--PRIMARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+
+                <!--Brand Logo-->
+                <a class="navbar-brand" href="/">
+                    <img src="/img/logo.png" alt="">
+                </a>
+
+                <!--Responsive Collapse Button-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsing Navigation-->
+                <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                    <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav">
+
+                        <!--HOME (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+
+                            <!--Main level link-->
+                            <a class="nav-link active" href="/">
+                                Ana Sayfa
+                                <span class="sr-only">(current)</span>
+                            </a>
+
+                        </li>
+                        <!--end HOME nav-item-->
+
+                        <!--ABOUT US (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/list">Liste</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/detail">Detay</a>
+                        </li>
+                        <!--end ABOUT US nav-item-->
+
+                        <!--CONTACT (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link mr-2" href="/contact">İletişim</a>
+                        </li>
+                        <!--end CONTACT nav-item-->
+
+                    </ul>
+                    <!--end Left navigation main level-->
+
+                    <!--RIGHT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!--LOGIN (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Giriş Yap</a>
+                        </li>
+
+                        <!--REGISTER (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/register">Kayıt Ol</a>
+                        </li>
+
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="/submit">
+                                <i class="fa fa-plus small mr-2"></i>
+                                Bir Emlak Ekle
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!--end Right navigation-->
+
+                </div>
+                <!--end navbar-collapse-->
+            </div>
+            <!--end container-->
+        </nav>
+        <!--end #ts-primary-navigation.navbar-->
+
+    </header>
+    <!--end Header-->

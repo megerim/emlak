@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="TrakyaEmlak">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Kayıt Ol</title>
+
+</head>
+
+<body>
+
+<!-- WRAPPER
+    =================================================================================================================-->
+<div class="ts-page-wrapper ts-has-bokeh-bg" id="page-top">
+
+    <%- include("partials/_header") %>
+
+    <!--*********************************************************************************************************-->
+    <!-- MAIN ***************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+    <main id="ts-main">
+
+        <!--BREADCRUMB
+            =========================================================================================================-->
+        <section id="breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!--PAGE TITLE
+            =========================================================================================================-->
+        <section id="page-title">
+            <div class="container">
+                <div class="ts-title">
+                    <h1>Kayıt Ol</h1>
+                </div>
+            </div>
+        </section>
+
+        <!--LOGIN / REGISTER SECTION
+            =========================================================================================================-->
+        <section id="login-register">
+            <div class="container">
+                <div class="row">
+
+                    <div class="offset-md-2 col-md-8 offset-lg-3 col-lg-6">
+
+                        <!--LOGIN / REGISTER TABS
+                            =========================================================================================-->
+                        <ul class="nav nav-tabs" id="login-register-tabs" role="tablist">
+
+                            <!--Login tab-->
+                            <li class="nav-item">
+                                <a class="nav-link" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">
+                                    <h3>Giriş Yap</h3>
+                                </a>
+                            </li>
+
+                            <!--Register tab-->
+                            <li class="nav-item">
+                                <a class="nav-link active" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">
+                                    <h3>Kayıt Ol</h3>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!--TAB CONTENT
+                            =========================================================================================-->
+                        <div class="tab-content">
+
+                            <!--LOGIN TAB
+                                =====================================================================================-->
+                            <div class="tab-pane" id="login" role="tabpanel" aria-labelledby="login-tab">
+
+                                <!--Login form-->
+                                <form class="ts-form" id="form-login">
+
+                                    <!--Email-->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="login-email" placeholder="Email" required>
+                                    </div>
+
+                                    <!--Password-->
+                                    <div class="input-group ts-has-password-toggle">
+                                        <input type="password" class="form-control border-right-0" placeholder="Password" value="Sercet_123" required>
+                                        <div class="input-group-append">
+                                            <a href="#" class="input-group-text bg-white border-left-0 ts-password-toggle">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!--Checkbox and Submit button-->
+                                    <div class="ts-center__vertical justify-content-between">
+
+                                        <!--Remember checkbox-->
+                                        <div class="custom-control custom-checkbox mb-0">
+                                            <input type="checkbox" class="custom-control-input" id="login-check">
+                                            <label class="custom-control-label" for="login-check">Remember Me</label>
+                                        </div>
+
+                                        <!--Submit button-->
+                                        <button type="submit" class="btn btn-primary">Login</button>
+
+                                    </div>
+
+                                    <hr>
+
+                                    <!--Forgot password link-->
+                                    <a href="#" class="ts-text-small">
+                                        <i class="fa fa-sync-alt ts-text-color-primary mr-2"></i>
+                                        <span class="ts-text-color-light">I have forgot my password</span>
+                                    </a>
+
+                                </form>
+
+                            </div>
+                            <!--end #login.tab-pane-->
+
+                            <!--REGISTER TAB
+                                =====================================================================================-->
+                            <div class="tab-pane active" id="register" role="tabpanel" aria-labelledby="register-tab">
+
+                                <!--Register tab-->
+                                <form class="ts-form" id="form-register">
+
+                                    <!--Name-->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="register-name" placeholder="Username" required>
+                                    </div>
+
+                                    <!--Email-->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="register-email" placeholder="Email" required>
+                                    </div>
+
+                                    <!--Password-->
+                                    <div class="input-group ts-has-password-toggle">
+                                        <input type="password" class="form-control border-right-0" placeholder="Password" required>
+                                        <div class="input-group-append">
+                                            <a href="#" class="input-group-text bg-white border-left-0 ts-password-toggle">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!--Repeat Password-->
+                                    <div class="input-group ts-has-password-toggle">
+                                        <input type="password" class="form-control border-right-0" placeholder="Repeat Password" required>
+                                        <div class="input-group-append">
+                                            <a href="#" class="input-group-text bg-white border-left-0 ts-password-toggle">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!--Checkbox-->
+                                    <div class="custom-control custom-checkbox mb-4">
+                                        <input type="checkbox" class="custom-control-input" id="register-check" required>
+                                        <label class="custom-control-label" for="register-check">I Agree With <a href="#" class="btn-link">Terms and Conditions</a></label>
+                                    </div>
+
+                                    <!--Submit button-->
+                                    <button type="submit" class="btn btn-primary">Register</button>
+
+                                </form>
+
+                            </div>
+                            <!--end #register.tab-pane-->
+                        </div>
+                        <!--end tab-content-->
+
+                    </div>
+                    <!--end offset-4.col-md-4-->
+
+                </div>
+                <!--end row-->
+            </div>
+            <!--end container-->
+        </section>
+
+    </main>
+    <!--end #ts-main-->
+
+    <%- include("partials/_footer") %>
+
+</div>
+<!--end page-->
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/custom.js"></script>
+
+</body>
+</html>
