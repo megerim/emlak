@@ -5652,3 +5652,65 @@ img.mfp-img {
         padding-right: .375rem;
     }
 }
+
+/*Services*/
+
+.container-services {
+    width: 80%;
+    margin: auto;
+}
+
+.tabs-services {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button-services {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.tab-button-services:hover {
+    border-bottom: 2px solid #000;
+}
+
+.tab-content-services {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.tab-pane-services {
+    display: none;
+}
+
+.row-services {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.column-services {
+    flex: 1;
+    padding: 10px;
+}
+
+.text-left-services, .text-right-services {
+    text-align: left;
+}
+
+.image-right-services img, .image-left-services img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-img-yeni{
+    background-image: url('/img/bg-apartment-table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

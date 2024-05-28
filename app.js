@@ -13,6 +13,7 @@ var registerRouter = require('./routes/register');
 var listRouter = require('./routes/list');
 var detailRouter = require('./routes/detail');
 var mapRouter = require('./routes/map');
+var servicesRouter = require('./routes/services');
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use('/register', registerRouter);
 app.use('/list', listRouter);
 app.use('/detail', detailRouter);
 app.use('/map', mapRouter);
+app.use('/services', servicesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
