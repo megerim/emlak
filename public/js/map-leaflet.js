@@ -120,7 +120,7 @@ $(document).ready(function($) {
                     ( ( loadedMarkersData[i]["ribbon"] !== undefined ) ? '<div class="ts-marker__feature">' + loadedMarkersData[i]["ribbon"] + '</div>' : "" ) +
                     ( ( loadedMarkersData[i]["title"] !== undefined ) ? '<div class="ts-marker__title">' + loadedMarkersData[i]["title"] + '</div>' : "" ) +
                     ( ( loadedMarkersData[i]["price"] !== undefined && loadedMarkersData[i]["price"] > 0 ) ? '<div class="ts-marker__info">' + formatPrice(loadedMarkersData[i]["price"]) + '</div>' : "" ) +
-                    ( ( loadedMarkersData[i]["marker_image"] !== undefined ) ? '<div class="ts-marker__image ts-black-gradient" style="background-image: url(' + loadedMarkersData[i]["marker_image"] + ')"></div>' : '<div class="ts-marker__image ts-black-gradient" style="background-image: url(assets/img/marker-default-img.png)"></div>' ) +
+                    ( ( loadedMarkersData[i]["marker_image"] !== undefined ) ? '<div class="ts-marker__image ts-black-gradient" style="background-image: url(' + loadedMarkersData[i]["marker_image"] + ')"></div>' : '<div class="ts-marker__image ts-black-gradient" style="background-image: url(/img/marker-default-img.png)"></div>' ) +
                     '</a>' +
                 '</div>';
 
@@ -242,7 +242,7 @@ $(document).ready(function($) {
         infoboxHtml.innerHTML =
             '<div class="infobox-wrapper">' +
                 '<div class="ts-infobox" data-ts-id="' + loadedMarkersData[i]["id"] + '">' +
-                    '<img src="assets/img/infobox-close.svg" class="ts-close">' +
+                    '<img src="/img/infobox-close.svg" class="ts-close">' +
 
                     ( ( loadedMarkersData[i]["ribbon"] !== undefined ) ? '<div class="ts-ribbon">' + loadedMarkersData[i]["ribbon"] + '</div>' : "" ) +
                     ( ( loadedMarkersData[i]["ribbon_corner"] !== undefined ) ? '<div class="ts-ribbon-corner"><span>' + loadedMarkersData[i]["ribbon_corner"] + '</span></div>' : "" ) +
@@ -331,11 +331,11 @@ $(document).ready(function($) {
 
             resultsHtml.push(
                 '<div class="ts-result-link" data-ts-id="' + loadedMarkersData[id]["id"] + '" data-ts-ln="' + newMarkers[id].loopNumber + '">' +
-                    '<span class="ts-center-marker"><img src="assets/img/result-center.svg"></span>' +
+                    '<span class="ts-center-marker"><img src="/img/result-center.svg"></span>' +
                     '<a href="' + loadedMarkersData[id]["url"] + '" class="card ts-item ts-card ts-result">' +
                         ( ( loadedMarkersData[i]["ribbon"] !== undefined ) ? '<div class="ts-ribbon">' + loadedMarkersData[i]["ribbon"] + '</div>' : "" ) +
                         ( ( loadedMarkersData[i]["ribbon_corner"] !== undefined ) ? '<div class="ts-ribbon-corner"><span>' + loadedMarkersData[i]["ribbon_corner"] + '</span></div>' : "" ) +
-                        '<div href="detail-01.html" class="card-img ts-item__image" style="background-image: url(' + loadedMarkersData[id]["marker_image"] + ')"></div>' +
+                        '<div href="/detail" class="card-img ts-item__image" style="background-image: url(' + loadedMarkersData[id]["marker_image"] + ')"></div>' +
                         '<div class="card-body">' +
                             '<div class="ts-item__info-badge">' + formatPrice(loadedMarkersData[id]["price"]) + '</div>' +
                             '<figure class="ts-item__info">' +
@@ -454,7 +454,7 @@ $(document).ready(function($) {
         ( controls === 1 ) ? L.control.zoom({position: "topright"}).addTo(map) : "";
 
         var icon = L.icon({
-            iconUrl: "assets/img/marker-small.png",
+            iconUrl: "/img/marker-small.png",
             iconSize: [22, 29],
             iconAnchor: [11, 29]
         });
