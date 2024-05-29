@@ -1,20 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="TrakyaEmlak">
-
-    <!--CSS -->
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/font-awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/css/leaflet.css">
-    <link rel="stylesheet" href="/css/style.css">
-
-	<title>Ev Giriş</title>
-
-</head>
+<%- include("partials/_headSecond") %>
 
 <body>
 
@@ -30,20 +14,6 @@
 
     <main id="ts-main">
 
-        <!--BREADCRUMB
-            =========================================================================================================-->
-        <section id="breadcrumb">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-
         <!--PAGE TITLE
             =========================================================================================================-->
         <section id="page-title">
@@ -51,7 +21,7 @@
                 <div class="row">
                     <div class="offset-lg-1 col-lg-10">
                         <div class="ts-title">
-                            <h1>Submit</h1>
+                            <h1>Kayıt Giriş</h1>
                         </div>
                     </div>
                 </div>
@@ -68,36 +38,13 @@
 
                         <form id="form-submit" class="ts-form">
 
-                            <!--ALERT
-                                =====================================================================================-->
-                            <section id="alert">
-                                <div class="alert alert-primary p-5 d-block d-sm-flex align-items-center mb-5" role="alert" data-bg-color="rgba(230,230,255,.2)">
-
-                                    <!--ICON-->
-                                    <i class="fa fa-exclamation-triangle display-4 font-weight-bold ts-opacity__30 mr-5 py-2"></i>
-
-                                    <!--CONTENT-->
-                                    <aside>
-                                        <h5 class="font-weight-normal">Please Login Or Register</h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat
-                                            tempor sapien.
-                                            In lobortis posuere tincidunt. Curabitur malesuada tempus ligula nec
-                                        </p>
-                                        <a href="register.html" class="btn btn-light btn-xs">Register</a>
-                                        <a href="login.html" class="btn btn-light btn-xs">Login</a>
-                                    </aside>
-                                </div>
-                                <!--end alert-->
-
-                            </section>
 
                             <!--BASIC INFORMATION
                                 =====================================================================================-->
                             <section id="basic-information" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Basic Information</h3>
+                                <h3 class="text-muted border-bottom">Anahtar Bilgiler</h3>
 
                                 <!--Row-->
                                 <div class="row">
@@ -105,7 +52,7 @@
                                     <!--Title-->
                                     <div class="col-sm-8">
                                         <div class="form-group">
-                                            <label for="title">Title</label>
+                                            <label for="title">Başlık</label>
                                             <input type="text" class="form-control" id="title" name="title" required>
                                         </div>
                                     </div>
@@ -113,10 +60,10 @@
                                     <!--Price-->
                                     <div class="col-sm-4">
                                         <div class="input-group">
-                                            <label for="price">Price</label>
+                                            <label for="price">Fiyat</label>
                                             <input type="text" class="form-control border-right-0" id="price">
                                             <div class="input-group-append">
-                                                <span class="input-group-text bg-white border-left-0">$</span>
+                                                <span class="input-group-text bg-white border-left-0">₺</span>
                                             </div>
                                         </div>
                                     </div>
@@ -128,7 +75,7 @@
                                             <!--Area-->
                                             <div class="col">
                                                 <div class="input-group">
-                                                    <label for="area">Area</label>
+                                                    <label for="area">Alan</label>
                                                     <input type="text" class="form-control border-right-0" id="area">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text bg-white border-left-0">m<sup>2</sup></span>
@@ -139,7 +86,7 @@
                                             <!--Rooms-->
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label for="rooms">Rooms</label>
+                                                    <label for="rooms">Oda Sayısı</label>
                                                     <input type="number" class="form-control" id="rooms" name="rooms" min="0" required>
                                                 </div>
                                             </div>
@@ -153,13 +100,13 @@
                                     <!--Type Select-->
                                     <div class="col-sm-6 col-md-4">
                                         <div class="form-group">
-                                            <label for="type">Type</label>
+                                            <label for="type">Emlak Tipi</label>
                                             <select class="custom-select" id="type" name="type">
-                                                <option value="">Select Type</option>
-                                                <option value="1">Apartment</option>
+                                                <option value="">Seç</option>
+                                                <option value="1">Apartman</option>
                                                 <option value="2">Villa</option>
-                                                <option value="3">Land</option>
-                                                <option value="4">Garage</option>
+                                                <option value="3">Arazi</option>
+                                                <option value="4">Depo</option>
                                             </select>
                                         </div>
                                     </div>
@@ -167,11 +114,11 @@
                                     <!--Status Select-->
                                     <div class="col-sm-6 col-md-4">
                                         <div class="form-group">
-                                            <label for="status">Status</label>
+                                            <label for="status">Durum</label>
                                             <select class="custom-select" id="status" name="status">
-                                                <option value="">Select Status</option>
-                                                <option value="1">Sale</option>
-                                                <option value="2">Rent</option>
+                                                <option value="">Seç</option>
+                                                <option value="1">Satılık</option>
+                                                <option value="2">Kiralık</option>
                                             </select>
                                         </div>
                                     </div>
@@ -185,7 +132,10 @@
                             <section id="location" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Location</h3>
+                                <h3 class="text-muted border-bottom">Konum
+                                    <i class="fa fa-question-circle question-icon-tooltip" title="Adres alanına direkt koordinat bilgileri girebilirsiniz. Örn. 46.0124/27.1256"></i>
+
+                                </h3>
 
                                 <div class="row">
 
@@ -193,7 +143,7 @@
 
                                         <!--Address-->
                                         <div class="input-group">
-                                            <label for="address">Address</label>
+                                            <label for="address">Adres</label>
                                             <input type="text" class="form-control border-right-0" id="address">
                                             <div class="input-group-append" data-toggle="tooltip" data-placement="top" title="Find My Location">
                                                 <a href="#" class="input-group-text bg-white border-left-0 ">
@@ -204,22 +154,15 @@
 
                                         <!--City-->
                                         <div class="form-group">
-                                            <label for="city">City</label>
+                                            <label for="city">İlçe</label>
                                             <input type="text" class="form-control" id="city" name="city" required>
                                         </div>
 
                                         <!--State-->
                                         <div class="form-group">
-                                            <label for="state">State</label>
+                                            <label for="state">İl</label>
                                             <input type="text" class="form-control" id="state" name="state" required>
                                         </div>
-
-                                        <!--ZIP-->
-                                        <div class="form-group mb-0">
-                                            <label for="zip">ZIP</label>
-                                            <input type="number" class="form-control" id="zip" name="zip" required>
-                                        </div>
-
                                     </div>
                                     <!--end col-md-6-->
 
@@ -247,13 +190,15 @@
                             <section id="gallery" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Gallery</h3>
+                                <h3 class="text-muted border-bottom">Galeri 
+                                    <i class="fa fa-question-circle question-icon-tooltip" title="Görselleri tercihen WebP uzantılı, en fazla 1920*1080 çözünürlüğünde kullanmalısınız."></i>
+                                </h3>
 
                                 <!--File upload-->
                                 <div class="file-upload-previews"></div>
                                 <div class="file-upload">
                                     <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
-                                    <span><i class="fa fa-plus-circle"></i>Click or drag images here</span>
+                                    <span><i class="fa fa-plus-circle"></i>Sürükle / Tıkla</span>
                                 </div>
 
                             </section>
@@ -263,11 +208,11 @@
                             <section id="additional-information" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Additional Information</h3>
+                                <h3 class="text-muted border-bottom">Ekstra Bilgiler</h3>
 
                                 <!--Description-->
                                 <div class="form-group">
-                                    <label for="description">Description</label>
+                                    <label for="description">Açıklama</label>
                                     <textarea class="form-control" id="description" rows="4" name="description"></textarea>
                                 </div>
 
@@ -277,7 +222,7 @@
                                     <!--Bedrooms-->
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label for="bedrooms">Bedrooms</label>
+                                            <label for="bedrooms">Yatak Odası</label>
                                             <input type="number" class="form-control" id="bedrooms" name="bedrooms" min="0">
                                         </div>
                                     </div>
@@ -285,7 +230,7 @@
                                     <!--Bathrooms-->
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label for="bathrooms">Bathrooms</label>
+                                            <label for="bathrooms">Banyo</label>
                                             <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="0">
                                         </div>
                                     </div>
@@ -293,7 +238,7 @@
                                     <!--Garages-->
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label for="garages">Garages</label>
+                                            <label for="garages">Garaj</label>
                                             <input type="number" class="form-control" id="garages" name="garages" min="0">
                                         </div>
                                     </div>
@@ -302,24 +247,23 @@
                                 <!--end row-->
 
                                 <div id="features-checkboxes">
-                                    <h6 class="mb-3">Features</h6>
+                                    <h6 class="mb-3">Özellikler</h6>
 
-                                    <!--Checkboxes-->
                                     <div class="ts-column-count-3">
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1">
-                                            <label class="custom-control-label" for="ch_1">Air conditioning</label>
+                                            <label class="custom-control-label" for="ch_1">Hava filtreleme</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2">
-                                            <label class="custom-control-label" for="ch_2">Bedding</label>
+                                            <label class="custom-control-label" for="ch_2">Yatak</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
-                                            <label class="custom-control-label" for="ch_3">Heating</label>
+                                            <label class="custom-control-label" for="ch_3">Isıtma</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
@@ -329,27 +273,27 @@
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
-                                            <label class="custom-control-label" for="ch_5">Microwave</label>
+                                            <label class="custom-control-label" for="ch_5">Microdalga Fırın</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
-                                            <label class="custom-control-label" for="ch_6">Smoking allowed</label>
+                                            <label class="custom-control-label" for="ch_6">Sigara İçilebilir</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7">
-                                            <label class="custom-control-label" for="ch_7">Terrace</label>
+                                            <label class="custom-control-label" for="ch_7">Teras</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="ch_8">
-                                            <label class="custom-control-label" for="ch_8">Balcony</label>
+                                            <label class="custom-control-label" for="ch_8">Balkon</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="ch_9">
-                                            <label class="custom-control-label" for="ch_9">Iron</label>
+                                            <label class="custom-control-label" for="ch_9">Ütü</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
@@ -359,12 +303,12 @@
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="ch_11">
-                                            <label class="custom-control-label" for="ch_11">Beach</label>
+                                            <label class="custom-control-label" for="ch_11">Sahil</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="ch_12">
-                                            <label class="custom-control-label" for="ch_12">Parking</label>
+                                            <label class="custom-control-label" for="ch_12">Park</label>
                                         </div>
 
                                     </div>
@@ -381,9 +325,9 @@
                             <section class="py-3">
                                 <a href="#" class="btn btn-outline-secondary btn-lg float-left">
                                     <i class="fa fa-save mr-2"></i>
-                                    Save Draft
+                                    Taslak Olarak Kaydet
                                 </a>
-                                <button type="submit" onclick="window.location='preview.html'" class="btn btn-primary ts-btn-arrow btn-lg float-right">Preview
+                                <button type="submit" onclick="window.location='preview.html'" class="btn btn-primary ts-btn-arrow btn-lg float-right">Önizleme
                                 </button>
                             </section>
 

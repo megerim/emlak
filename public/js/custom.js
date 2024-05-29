@@ -450,3 +450,18 @@ function hideCollapseOnMobile() {
         $(".ts-xs-hide-collapse.collapse").removeClass("show");
     }
 }
+function showTab(serviceId) {
+    var tabs = document.getElementsByClassName('tab-pane-services');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+    }
+    document.getElementById(serviceId).style.display = 'block';
+
+    var buttons = document.getElementsByClassName('tab-button-services');
+    for (var j = 0; j < buttons.length; j++) {
+        buttons[j].classList.remove('active');
+    }
+    event.target.classList.add('active');
+}
+
+

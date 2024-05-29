@@ -1,21 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="TrakyaEmlak">
-
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="/font-awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-
-	<title>Hakkımızda</title>
-
-</head>
+<%- include("partials/_headSecond") %>
 
 <body>
 
-<div class="ts-page-wrapper ts-has-bokeh-bg" id="page-top">
+<div class="ts-page-wrapper " id="page-top">
 
     <%- include("partials/_header") %>
 
@@ -25,27 +12,12 @@
 
     <main id="ts-main">
 
-        <!--BREADCRUMB ******************************************************************************************-->
-        <section id="breadcrumb">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Ana Sayfa</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Hakkımızda</li>
-                    </ol>
-                    <!--end breadcrumb-->
-                </nav>
-                <!--end nav-->
-            </div>
-            <!--end container-->
-        </section>
 
         <!--PAGE TITLE ******************************************************************************************-->
         <section id="page-title">
             <div class="container">
                 <div class="ts-title">
                     <h1>Hakkımızda</h1>
-                </div>
                 <!--end ts-title-->
             </div>
             <!--end container-->
@@ -108,7 +80,7 @@
                                     <h4>Tekirdağ Bürosu</h4>
                                     <aside>
                                         <i class="fa fa-map-marker mr-2"></i>
-                                        Hürriyet Mahallesi, Süleymanpaşa/Tekirdağ
+                                        Süleymanpaşa/Tekirdağ
                                     </aside>
                                 </figure>
 
@@ -270,7 +242,7 @@
 
                             <div class="ts-slide">
                                 <div class="ts-circle__sm" data-bg-image="/img/img-person-01.jpg"></div>
-                                <h5 class="my-3">Jane Doe</h5>
+                                <h5 class="my-3">Kullanıcı Yorumu</h5>
                                 <p class="h5 font-weight-normal ts-text-color-light">
                                     Duis ac dolor et enim volutpat semper. Morbi placerat tempor ornare. Quisque
                                     bibendum
@@ -281,7 +253,16 @@
 
                             <div class="ts-slide">
                                 <div class="ts-circle__sm" data-bg-image="/img/img-person-02.jpg"></div>
-                                <h5 class="my-3">Catherine Pride</h5>
+                                <h5 class="my-3">Kullanıcı Yorumu</h5>
+                                <p class="h5 font-weight-normal ts-text-color-light">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tempor
+                                    sapien.
+                                    In lobortis posuere tincidunt. Curabitur malesuada tempus ligula nec
+                                </p>
+                            </div>
+                            <div class="ts-slide">
+                                <div class="ts-circle__sm" data-bg-image="/img/img-person-02.jpg"></div>
+                                <h5 class="my-3">Kullanıcı Yorumu</h5>
                                 <p class="h5 font-weight-normal ts-text-color-light">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tempor
                                     sapien.
@@ -309,8 +290,8 @@
 
                             <div class="col-sm-3">
                                 <div class="ts-promo-number">
-                                    <h2>640</h2>
-                                    <h4 class="mb-0 ts-opacity__50">Properties</h4>
+                                    <h2 class="sayi">640</h2>
+                                    <h4 class="mb-0 baslik4">Mülk</h4>
                                 </div>
                                 <!--end ts-promo-number-->
                             </div>
@@ -318,8 +299,8 @@
 
                             <div class="col-sm-3">
                                 <div class="ts-promo-number">
-                                    <h2>350</h2>
-                                    <h4 class="mb-0 ts-opacity__50">Local Agents</h4>
+                                    <h2 class="sayi">350</h2>
+                                    <h4 class="mb-0 baslik4">Müşteri</h4>
                                 </div>
                                 <!--end ts-promo-number-->
                             </div>
@@ -327,8 +308,8 @@
 
                             <div class="col-sm-3">
                                 <div class="ts-promo-number">
-                                    <h2>23</h2>
-                                    <h4 class="mb-0 ts-opacity__50">Years Experience</h4>
+                                    <h2 class="sayi">23</h2>
+                                    <h4 class="mb-0 baslik4">Tecrübe</h4>
                                 </div>
                                 <!--end ts-promo-number-->
                             </div>
@@ -336,8 +317,8 @@
 
                             <div class="col-sm-3">
                                 <div class="ts-promo-number">
-                                    <h2>67</h2>
-                                    <h4 class="mb-0 ts-opacity__50">Agencies</h4>
+                                    <h2 class="sayi">67</h2>
+                                    <h4 class="mb-0 baslik4">Ortaklık</h4>
                                 </div>
                                 <!--end ts-promo-number-->
                             </div>
@@ -354,32 +335,37 @@
         </section>
 
         <!--PARTNERS ********************************************************************************************-->
-        <section id="partners">
-            <div class="ts-block py-4">
-                <div class="container">
-                    <!--block of logos-->
-                    <div class="d-block d-md-flex justify-content-between align-items-center text-center ts-partners py-3">
-                        <a href="#">
-                            <img src="/img/logo-01.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="/img/logo-02.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="/img/logo-03.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="/img/logo-04.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="/img/logo-05.png" alt="">
-                        </a>
-                    </div>
-                    <!--end logos-->
+        <section id="partners" class="ts-block pt-4 pb-0">
+            <div class="container">
+
+                <!--Logos-->
+                <div class="d-block d-md-flex justify-content-between align-items-center text-center ts-partners py-3">
+
+                    <a href="#">
+                        <img class="deneme" src="/img/logo1.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="deneme" src="/img/logo1.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="deneme" src="/img/logo1.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="deneme" src="/img/logo1.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img class="deneme" src="/img/logo1.png" alt="">
+                    </a>
+
                 </div>
-                <!--end container-->
+                <!--end logos-->
             </div>
         </section>
+
 
     </main>
     <!--end #ts-main-->

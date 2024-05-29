@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>İletişim</title>
+    <title><%= title %> | TrakyaEmlak</title>
+
 
 </head>
 
@@ -20,7 +21,7 @@
 
 <!-- WRAPPER
     =================================================================================================================-->
-<div class="ts-page-wrapper ts-has-bokeh-bg" id="page-top">
+<div class="ts-page-wrapper " id="page-top">
 
     <%- include("partials/_header") %>
 
@@ -30,26 +31,13 @@
 
     <main id="ts-main">
 
-        <!--BREADCRUMB
-            =========================================================================================================-->
-        <section id="breadcrumb">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
 
         <!--PAGE TITLE
             =========================================================================================================-->
         <section id="page-title">
             <div class="container">
                 <div class="ts-title">
-                    <h1>Contact</h1>
+                    <h1>Bize Ulaşın</h1>
                 </div>
             </div>
         </section>
@@ -62,20 +50,20 @@
                 <div class="ts-contact-map ts-map ts-shadow__sm position-relative">
 
                     <!--Address on map-->
-                    <address class="position-absolute ts-bottom__0 ts-left__0 text-white m-3 p-4 ts-z-index__2" data-bg-color="rgba(0,0,0,.8)">
-                        <strong>Real Estate Agency</strong>
+                    <address class="position-absolute ts-bottom__0 ts-left__0 text-white m-3 p-4 ts-z-index__2" data-bg-color="#A91D3A">
+                        <strong>Emlak Ofisi</strong>
                         <br>
-                        2501 Rosemont Avenue
+                        59000
                         <br>
-                        Orlando, FL 32801
+                        Tekirdağ
                     </address>
 
                     <!--Map-->
                     <div id="ts-map-simple" class="h-100 ts-z-index__1"
                          data-ts-map-leaflet-provider="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}{r}.png"
                          data-ts-map-zoom="14"
-                         data-ts-map-center-latitude="40.702411"
-                         data-ts-map-center-longitude="-73.556842"
+                         data-ts-map-center-latitude="40.9770251"
+                         data-ts-map-center-longitude="27.5139553"
                          data-ts-map-scroll-wheel="1"
                          data-ts-map-controls="0"></div>
                 </div>
@@ -94,7 +82,7 @@
                     <div class="col-md-4">
 
                         <!--Title-->
-                        <h3>Get In Touch</h3>
+                        <h3>İletişim</h3>
 
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tempor sapien.
@@ -105,8 +93,8 @@
                         <figure class="ts-center__vertical">
                             <i class="fa fa-phone ts-opacity__50 mr-3 mb-0 h4 font-weight-bold"></i>
                             <dl class="mb-0">
-                                <dt>Phone</dt>
-                                <dd class="ts-opacity__50">+1 321-978-5552</dd>
+                                <dt>Telefon</dt>
+                                <dd class="ts-opacity__50"> +90 555 123 4567 </dd>
                             </dl>
                         </figure>
 
@@ -116,16 +104,16 @@
                             <dl class="mb-0">
                                 <dt>Email</dt>
                                 <dd class="ts-opacity__50">
-                                    <a href="#">hello@example.com</a>
+                                    <a href="#">hello@trakyaemlak.com</a>
                                 </dd>
                             </dl>
                         </figure>
 
-                        <!--Skype-->
+                        <!--Instagram-->
                         <figure class="ts-center__vertical">
-                            <i class="fab fa-skype ts-opacity__50 mr-3 mb-0 h4 font-weight-bold"></i>
+                            <i class="fab fa-instagram ts-opacity__50 mr-3 mb-0 h4 font-weight-bold"></i>
                             <dl class="mb-0">
-                                <dt>Skype</dt>
+                                <dt>Instagram</dt>
                                 <dd class="ts-opacity__50">
                                     <a href="#">real.estate.agency</a>
                                 </dd>
@@ -140,7 +128,7 @@
                     <div class="col-md-8">
 
                         <!--Title-->
-                        <h3>Contact Form</h3>
+                        <h3>İletişim Formu</h3>
 
                         <!--Form-->
                         <form id="form-contact" method="post" class="clearfix ts-form ts-form-email" data-php-path="/php/email.php">
@@ -151,8 +139,8 @@
                                 <!--Name-->
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <label for="form-contact-name">Name *</label>
-                                        <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Your Name" required>
+                                        <label for="form-contact-name">Ad Soyad *</label>
+                                        <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Adınız Soyadınız" required>
                                     </div>
                                 </div>
 
@@ -160,7 +148,7 @@
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label for="form-contact-email">Email *</label>
-                                        <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Your Email" required>
+                                        <input type="email" class="form-control" id="form-contact-email" name="email" placeholder=" Email Adresiniz" required>
                                     </div>
                                 </div>
 
@@ -169,20 +157,20 @@
 
                             <!--Subject-->
                             <div class="form-group">
-                                <label for="form-contact-email">Subject*</label>
-                                <input type="text" class="form-control" id="form-contact-subject" name="subject" placeholder="Subject" required>
+                                <label for="form-contact-email">Konu *</label>
+                                <input type="text" class="form-control" id="form-contact-subject" name="subject" placeholder="Konu" required>
                             </div>
 
                             <!--Message-->
                             <div class="form-group">
-                                <label for="form-contact-message">Message *</label>
-                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Your Message" required></textarea>
+                                <label for="form-contact-message">Mesaj *</label>
+                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Mesajınız" required></textarea>
                             </div>
 
                             <!--Submit button-->
                             <div class="form-group clearfix">
-                                <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">Send
-                                    a Message
+                                <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">Mesaj Gönder
+                                    
                                 </button>
                             </div>
 

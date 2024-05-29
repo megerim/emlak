@@ -69,46 +69,27 @@
                     <!--LEFT NAVIGATION MAIN LEVEL
                     =================================================================================================-->
                     <ul class="navbar-nav">
-
-                        <!--HOME (Main level)
-                        =============================================================================================-->
                         <li class="nav-item">
-
-                            <!--Main level link-->
-                            <a class="nav-link active" href="/">
+                            <a class="nav-link <%= title === 'Hoşgeldiniz' ? 'active' : '' %>" href="/">
                                 Ana Sayfa
                                 <span class="sr-only">(current)</span>
                             </a>
-
-                        </li>
-                        <!--end HOME nav-item-->
-
-                        <!--ABOUT US (Main level)
-                        =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list">Liste</a>
+                            <a class="nav-link <%= title === 'Hakkımızda' ? 'active' : '' %>" href="/about">Hakkımızda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/detail">Detay</a>
+                            <a class="nav-link <%= title === 'Tüm Evler' ? 'active' : '' %>" href="/list">Keşfet</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/map">Harita</a>
+                            <a class="nav-link <%= title === 'Harita' ? 'active' : '' %>" href="/map">Harita</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/services">Proje Süreçlerimiz</a>
+                            <a class="nav-link <%= title === 'Süreçler' ? 'active' : '' %>" href="/services">Proje Süreçlerimiz</a>
                         </li>
-                        <!--end ABOUT US nav-item-->
-
-                        <!--CONTACT (Main level)
-                        =============================================================================================-->
                         <li class="nav-item">
-                            <a class="nav-link mr-2" href="/contact">İletişim</a>
+                            <a class="nav-link <%= title === 'İletişim' ? 'active' : '' %>" href="/contact">İletişim</a>
                         </li>
-                        <!--end CONTACT nav-item-->
-
                     </ul>
                     <!--end Left navigation main level-->
 

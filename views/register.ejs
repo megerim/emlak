@@ -1,19 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="TrakyaEmlak">
-
-    <!--CSS -->
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/font-awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-
-    <title>Kayıt Ol</title>
-
-</head>
+<%- include("partials/_headSecond") %>
 
 <body>
 
@@ -29,19 +14,6 @@
 
     <main id="ts-main">
 
-        <!--BREADCRUMB
-            =========================================================================================================-->
-        <section id="breadcrumb">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
 
         <!--PAGE TITLE
             =========================================================================================================-->
@@ -113,11 +85,11 @@
                                         <!--Remember checkbox-->
                                         <div class="custom-control custom-checkbox mb-0">
                                             <input type="checkbox" class="custom-control-input" id="login-check">
-                                            <label class="custom-control-label" for="login-check">Remember Me</label>
+                                            <label class="custom-control-label" for="login-check">Beni Hatırla</label>
                                         </div>
 
                                         <!--Submit button-->
-                                        <button type="submit" class="btn btn-primary">Login</button>
+                                        <button type="submit" class="btn btn-primary">Giriş</button>
 
                                     </div>
 
@@ -126,7 +98,7 @@
                                     <!--Forgot password link-->
                                     <a href="#" class="ts-text-small">
                                         <i class="fa fa-sync-alt ts-text-color-primary mr-2"></i>
-                                        <span class="ts-text-color-light">I have forgot my password</span>
+                                        <span class="ts-text-color-light">Şifremi Unuttum</span>
                                     </a>
 
                                 </form>
@@ -143,7 +115,7 @@
 
                                     <!--Name-->
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="register-name" placeholder="Username" required>
+                                        <input type="text" class="form-control" id="register-name" placeholder="Kullanıcı Adı" required>
                                     </div>
 
                                     <!--Email-->
@@ -153,7 +125,7 @@
 
                                     <!--Password-->
                                     <div class="input-group ts-has-password-toggle">
-                                        <input type="password" class="form-control border-right-0" placeholder="Password" required>
+                                        <input type="password" class="form-control border-right-0" placeholder="Şifre" required>
                                         <div class="input-group-append">
                                             <a href="#" class="input-group-text bg-white border-left-0 ts-password-toggle">
                                                 <i class="fa fa-eye"></i>
@@ -163,7 +135,7 @@
 
                                     <!--Repeat Password-->
                                     <div class="input-group ts-has-password-toggle">
-                                        <input type="password" class="form-control border-right-0" placeholder="Repeat Password" required>
+                                        <input type="password" class="form-control border-right-0" placeholder="Tekrar Şifre" required>
                                         <div class="input-group-append">
                                             <a href="#" class="input-group-text bg-white border-left-0 ts-password-toggle">
                                                 <i class="fa fa-eye"></i>
@@ -174,11 +146,11 @@
                                     <!--Checkbox-->
                                     <div class="custom-control custom-checkbox mb-4">
                                         <input type="checkbox" class="custom-control-input" id="register-check" required>
-                                        <label class="custom-control-label" for="register-check">I Agree With <a href="#" class="btn-link">Terms and Conditions</a></label>
+                                        <label class="custom-control-label" for="register-check"> <a href="#" class="btn-link">Okudum</a> Kabul Ediyorum.</label>
                                     </div>
 
                                     <!--Submit button-->
-                                    <button type="submit" class="btn btn-primary">Register</button>
+                                    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
 
                                 </form>
 
