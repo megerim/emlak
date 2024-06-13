@@ -5784,6 +5784,8 @@ img.mfp-img {
 
 .baslik3{
     color: white;
+    font-weight: 600;
+
 }
 
 
@@ -5802,4 +5804,14 @@ img.mfp-img {
 
 .sayi{
     font-size: 30px;
+}
+
+#map-controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 5;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
